@@ -1,11 +1,10 @@
 "use client";
-import React, { useState, useRef,useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 export default function Nav() {
   const [dropDown, setDropDown] = useState(false);
   const dropMenu = useRef(null);
   const dropButton = useRef(null);
-
 
   function closeDropDown(e) {
     if (
@@ -20,12 +19,12 @@ export default function Nav() {
   }
 
   useEffect(() => {
-    document.addEventListener("mousedown",closeDropDown);
+    document.addEventListener("mousedown", closeDropDown);
 
     return () => {
-      document.removeEventListener("mousedown",closeDropDown);
-    }
-  })
+      document.removeEventListener("mousedown", closeDropDown);
+    };
+  });
 
   function shiftDropDown() {
     setDropDown(!dropDown);
@@ -70,7 +69,11 @@ export default function Nav() {
             </svg>
           </a>
 
-          <a className="focus:outline-none" href="https://github.com/KevinKant210" target="_blank">
+          <a
+            className="focus:outline-none"
+            href="https://github.com/KevinKant210"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
