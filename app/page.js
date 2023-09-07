@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Nav from "./components/navbar";
 import Showcase from "./components/showcase";
-import ProjectModal from "./components/projectModal";
+
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
 
-        <ProjectModal></ProjectModal>
+    
       </div>
 
       {/* Projects Segment */}

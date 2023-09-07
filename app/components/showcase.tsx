@@ -9,12 +9,13 @@ export default function Showcase() {
     <div className="w-full">
       <div className=" grid grid-cols-2 md:grid-cols-3">
         {projectData.map((proj,index) => {
-          return <>
+          return( 
             <div className="p-3" key={index}>
-              <h3 key={index} className="text-xl">{proj.title}</h3>
+              <h3  className="text-xl">{proj.title}</h3>
               {/* <p>{proj.description}</p> */}
             </div>
-          </>
+          
+        )
         })}
         
       </div>
